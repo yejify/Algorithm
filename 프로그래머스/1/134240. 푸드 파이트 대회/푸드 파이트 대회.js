@@ -3,8 +3,8 @@ function solution(food) {
     for(let i = 1; i<food.length;i++){
             answer.push(String(i).repeat(parseInt(food[i]/2)))
         }
-    let reverseA = [...answer].reverse()
+    let reA = [...answer].reverse()
     answer.push(0)
-    answer = answer.concat(reverseA)
+    answer = answer.concat(reA)
     return answer.join('');
 }
